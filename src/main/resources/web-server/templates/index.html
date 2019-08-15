@@ -1,0 +1,26 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="header :: copy"></head>
+
+<body>
+
+	<h1>Verizon Web Services</h1>
+
+
+	<ul class="openlist">
+		<li>Eureka Dashboard: <a
+			href="http://localhost:1111">http://localhost:1111</a></li>
+		<li>Fetch by account number: <a th:href="@{/accounts/11111}">/accounts/11111</a></li>
+
+		<li>Fetch by name: <a th:href="@{/accounts/owner/Pooja}">/accounts/owner/Pooja</a></li>
+
+		<li>Account <a th:href="@{/accounts/search}">Search</a></li>
+	</ul>
+
+	
+	<div th:replace="footer :: copy"></div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="header :: copy"></head>
+
+<body>
+	<h1>Accounts Server</h1>
+
+	<p>Accounts Server Microservice is running.</p>
+
+	<p>
+		This account should exist: <a href="/accounts/11111">11111</a>.
+		Look in <code>data.sql</code> to see the rest
+	</p>
+
+	
+	<div th:replace="footer :: copy"></div>
+
+</body>
+</html>
